@@ -49,7 +49,7 @@
           </div>
           <div id="manuscript" class="manuscript" hidden>
             <div><h3>Accepted manuscript</h3><p>Author version. The publisher's Version of Record is linked above; the notice is included in the manuscript PDF.</p></div>
-            <a class="inline-link" href="./em-merge-accepted.pdf" target="_blank" rel="noopener noreferrer">Open PDF <span aria-hidden="true">↗</span></a>
+            <a class="inline-link" href="./em-merge-protected.pdf" target="_blank" rel="noopener noreferrer">Open PDF <span aria-hidden="true">↗</span></a>
           </div>
           <p class="citation">Zhu, Q., Wang, J., Yang, Y., and Li, T. “EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing.” SETTA 2025, LNCS 16458, pp. 318–338. DOI: 10.1007/978-981-95-7826-9_17.</p>
         </article>
@@ -63,7 +63,7 @@
 
   <script>
     // When this PDF is placed in papers/, its link appears automatically.
-    fetch('./em-merge-accepted.pdf', { method: 'HEAD' })
+    fetch('./em-merge-protected.pdf', { method: 'HEAD' })
       .then(response => { if (response.ok) document.getElementById('manuscript').hidden = false; })
       .catch(() => {});
   </script>
