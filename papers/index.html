@@ -4,71 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Research papers by Victoria (Qiyue) Zhu, including EM-Merge, published at SETTA 2025.">
+  <meta name="description" content="Publications and author manuscripts by Victoria (Qiyue) Zhu.">
   <title>Papers | Victoria (Qiyue) Zhu</title>
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="../" aria-label="Victoria Zhu, home">Victoria Zhu<span class="brand-period">.</span></a>
-      <div class="nav-links">
-        <a href="../#about">About</a>
-        <a href="../#research">Research</a>
-        <a href="../#projects">Projects</a>
-        <a href="./" aria-current="page">Papers</a>
-        <a href="../#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="paper-hero container" aria-labelledby="papers-title">
-      <p class="eyebrow">Research library</p>
-      <h1 id="papers-title">Papers<span class="brand-period">.</span></h1>
-      <p>Published research and author manuscripts, collected in one place.</p>
-    </section>
-
-    <section class="paper-section section-pad" aria-labelledby="em-title">
-      <div class="container paper-layout">
-        <div class="paper-side"><span class="paper-number">01</span><p>Software reliability<br>and log intelligence</p></div>
-        <article class="paper-detail">
-          <p class="tile-kicker">SETTA 2025 · Springer LNCS</p>
-          <h2 id="em-title">EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing</h2>
-          <p class="paper-authors">Qiyue Zhu, Jinyuan Wang, Yani Yang, and Tong Li</p>
-          <p>EM-Merge consolidates fragmented templates from LLM-based log parsers through semantic candidate retrieval and confidence-weighted structural merging. The work aims to improve parsing quality while reducing repeated processing.</p>
-          <div class="paper-facts" aria-label="Selected results">
-            <div><strong>22.1%</strong><span>lower processing cost</span></div>
-            <div><strong>14</strong><span>log datasets evaluated</span></div>
-          </div>
-          <div class="paper-actions">
-            <a class="button button-dark" href="https://doi.org/10.1007/978-981-95-7826-9_17" target="_blank" rel="noopener noreferrer">Published paper <span aria-hidden="true">↗</span></a>
-            <a class="button button-light" href="https://github.com/VictoriaZQY/EM-Merge" target="_blank" rel="noopener noreferrer">Research code <span aria-hidden="true">↗</span></a>
-          </div>
-          <div id="manuscript" class="manuscript" hidden>
-            <div><h3>Accepted manuscript</h3><p>Author version. The publisher's Version of Record is linked above; the notice is included in the manuscript PDF.</p></div>
-            <a class="inline-link" href="./em-merge-accepted.pdf" target="_blank" rel="noopener noreferrer">Open PDF <span aria-hidden="true">↗</span></a>
-          </div>
-          <details id="file-verification" class="file-verification" hidden>
-            <summary>File verification</summary>
-            <p>Accepted manuscript · SHA-256</p>
-            <code id="pdf-sha256"></code>
-            <p>Compare this fingerprint with the SHA-256 of your downloaded PDF to check that the files match.</p>
-          </details>
-          <p class="citation">Zhu, Q., Wang, J., Yang, Y., and Li, T. “EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing.” SETTA 2025, LNCS 16458, pp. 318–338. DOI: 10.1007/978-981-95-7826-9_17.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="paper-close section-pad"><div class="container"><h2>More work in progress.</h2><p>For projects and engineering work, explore the rest of the site.</p><a class="inline-link" href="../#research">Back to research <span aria-hidden="true">↗</span></a></div></section>
+  <header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="../">Victoria Zhu<span aria-hidden="true">.</span></a><div class="nav-links"><a href="../#about">About</a><a href="../#research">Research</a><a href="../#publications">Publications</a><a href="../#projects">Projects</a><a href="../#updates">Updates</a><a href="../#contact">Contact</a></div></nav></header>
+  <main id="main" class="container paper-main">
+    <p class="paper-breadcrumb"><a href="../">← Back to homepage</a></p>
+    <h1>Papers</h1>
+    <p class="paper-intro">Published work and author manuscripts. The publisher link points to the Version of Record; the manuscript link appears when the author PDF is available here.</p>
+    <article class="paper-detail" aria-labelledby="em-title">
+      <p class="paper-kicker">SETTA 2025 · Springer LNCS</p>
+      <h2 id="em-title">EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing</h2>
+      <p class="paper-authors">Qiyue Zhu, Jinyuan Wang, Yani Yang, and Tong Li</p>
+      <p>EM-Merge uses semantic candidate retrieval and confidence-weighted structural merging to consolidate fragmented templates produced by LLM log parsers. The work evaluates parsing quality and processing cost across 14 log datasets.</p>
+      <div class="paper-facts" aria-label="Selected results"><div><strong>22.1%</strong><span>lower processing cost on OpenSSH and HealthApp</span></div><div><strong>14</strong><span>log datasets evaluated</span></div></div>
+      <div class="paper-actions"><a href="https://doi.org/10.1007/978-981-95-7826-9_17" target="_blank" rel="noopener noreferrer">Published paper ↗</a><a href="https://github.com/VictoriaZQY/EM-Merge" target="_blank" rel="noopener noreferrer">Research code ↗</a></div>
+      <div id="manuscript" class="manuscript" hidden><div><h3>Accepted manuscript</h3><p>Author version. The publisher's Version of Record is linked above; the notice is included in the PDF.</p></div><a href="./em-merge-accepted.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a></div>
+      <details id="file-verification" class="file-verification" hidden><summary>File verification</summary><p>Accepted manuscript · SHA-256</p><code id="pdf-sha256"></code><p>Compare this fingerprint with the SHA-256 of your downloaded PDF to check that the files match.</p></details>
+      <p class="citation">Zhu, Q., Wang, J., Yang, Y., and Li, T. “EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing.” SETTA 2025, LNCS 16458, pp. 318–338. DOI: 10.1007/978-981-95-7826-9_17.</p>
+    </article>
   </main>
-
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Victoria (Qiyue) Zhu</span><span>Made with care in California.</span><a href="../#contact">Contact <span aria-hidden="true">↗</span></a></div></footer>
-
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Victoria (Qiyue) Zhu</span><span>Software engineering &amp; AI systems · Mountain View, California</span></div></footer>
   <script>
-    // Reveal the manuscript and, if supplied, its separately published checksum.
     fetch('./em-merge-accepted.pdf', { method: 'HEAD' })
       .then(response => {
         if (!response.ok) return;
