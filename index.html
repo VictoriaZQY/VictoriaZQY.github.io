@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Victoria (Qiyue) Zhu is a software engineering master's student at Carnegie Mellon University working across reliable AI systems, log intelligence, and useful software.">
-  <title>Victoria (Qiyue) Zhu | Software Engineering & AI Research</title>
+  <meta name="description" content="Victoria (Qiyue) Zhu — software engineering and reliable AI research at Carnegie Mellon University.">
+  <title>Victoria (Qiyue) Zhu</title>
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -13,115 +13,65 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="./" aria-label="Victoria Zhu, home">Victoria Zhu<span class="brand-period">.</span></a>
+      <a class="brand" href="./">Victoria Zhu<span aria-hidden="true">.</span></a>
       <div class="nav-links">
-        <a href="#about">About</a>
+        <a href="#about" aria-current="page">About</a>
         <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
-        <a href="./papers/">Papers</a>
+        <a href="#updates">Updates</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" id="about" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <p class="eyebrow">Victoria (Qiyue) Zhu · CMU Silicon Valley</p>
-        <h1 id="hero-title">Thoughtful software.<br><span>Reliable AI.</span></h1>
-        <p class="hero-lead">I turn research ideas into useful systems. My work spans software engineering, machine learning, and the details that make technology dependable in practice.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
-          <a class="button button-light" href="./papers/">Read my papers <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="hero-caption">M.S. Software Engineering, Carnegie Mellon University · Mountain View, California</p>
+  <main id="main" class="container main-column">
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="identity-line"><p class="overline">Software engineering · Reliable AI</p><span>CMU Silicon Valley</span></div>
+      <h1 id="about-title">Victoria <span>(Qiyue)</span> Zhu</h1>
+      <p class="intro-lead">I am a master's student in Software Engineering at Carnegie Mellon University. I work on reliable AI systems and build software that turns research ideas into useful tools.</p>
+      <p>My research has centered on log intelligence: understanding where LLM-based parsers fail, retrieving related patterns, and consolidating fragmented templates. I also enjoy the engineering work around an idea, from data pipelines and evaluation to interfaces that people can actually use.</p>
+      <div class="quick-links"><a href="mailto:VICTORIAzqy@outlook.com">Email ↗</a><a href="https://github.com/VictoriaZQY" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/qiyue-zhu-b9446b354" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="./papers/">Papers ↗</a></div>
+    </section>
+
+    <section class="content-section" id="research" aria-labelledby="research-title">
+      <div class="section-head"><h2 id="research-title">Research interests</h2><span>01 / Focus</span></div>
+      <div class="interest-list">
+        <div class="interest-item"><h3>Reliable AI systems</h3><p>Studying failure modes and improving the consistency of systems that depend on model outputs, with careful evaluation alongside implementation.</p></div>
+        <div class="interest-item"><h3>Log intelligence</h3><p>Using semantic retrieval, structural matching, and feedback from parsing errors to turn noisy machine logs into useful templates.</p></div>
+        <div class="interest-item"><h3>Research into software</h3><p>Building the data and application layers around an idea so its methods can be tested, understood, and used beyond a prototype.</p></div>
       </div>
     </section>
 
-    <section class="intro section-pad" aria-labelledby="intro-title">
-      <div class="container intro-grid">
-        <p class="section-label">What drives the work</p>
-        <div>
-          <h2 id="intro-title">Research is most exciting when it holds up outside the lab.</h2>
-          <p>I'm interested in the space between a promising idea and a system people can actually rely on. That has led me from LLM log parsing and dynamic graph learning to hands-on product engineering and collaborative software projects.</p>
-        </div>
-      </div>
+    <section class="content-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-head"><h2 id="publications-title">Publications</h2><a href="./papers/">All paper details ↗</a></div>
+      <article class="publication">
+        <div class="publication-year">2025</div>
+        <div><h3>EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing</h3><p class="byline">Qiyue Zhu, Jinyuan Wang, Yani Yang, and Tong Li · SETTA 2025, Springer LNCS</p><p>Semantic candidate retrieval and confidence-weighted structural merging for fragmented log templates. Evaluated on 14 log datasets, with 22.1% lower processing cost reported on OpenSSH and HealthApp.</p><div class="link-row"><a href="https://doi.org/10.1007/978-981-95-7826-9_17" target="_blank" rel="noopener noreferrer">Published paper ↗</a><a href="./papers/">Author manuscript ↗</a><a href="https://github.com/VictoriaZQY/EM-Merge" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+      </article>
+      <p class="section-note">Also working on KnowledgeLog, a knowledge-guided approach to diagnosing and improving LLM log parsing. Manuscript in preparation.</p>
     </section>
 
-    <section class="research section-pad" id="research" aria-labelledby="research-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Selected research</p>
-          <h2 id="research-title">Making intelligence<br>more dependable.</h2>
-          <p>Methods, implementation, and careful evaluation belong in the same conversation.</p>
-        </div>
-
-        <article class="feature feature-dark" aria-labelledby="em-title">
-          <div class="feature-copy">
-            <p class="feature-kicker">Published at SETTA 2025 · Springer LNCS</p>
-            <h3 id="em-title">EM-Merge</h3>
-            <p class="feature-subtitle">Better structure from fragmented logs.</p>
-            <p>Led a two-stage method that combines semantic retrieval with confidence-weighted structural merging to consolidate log templates produced by LLM parsers.</p>
-            <div class="feature-links">
-              <a href="./papers/">Paper details <span aria-hidden="true">↗</span></a>
-              <a href="https://doi.org/10.1007/978-981-95-7826-9_17" target="_blank" rel="noopener noreferrer">Published paper <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/VictoriaZQY/EM-Merge" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="feature-stat" aria-label="22.1 percent lower processing cost"><strong>22.1<span>%</span></strong><span>lower processing cost</span></div>
-        </article>
-
-        <div class="research-grid">
-          <article class="tile" aria-labelledby="knowledge-title">
-            <p class="tile-kicker">LLM log parsing</p>
-            <h3 id="knowledge-title">KnowledgeLog</h3>
-            <p>Diagnosed domain knowledge gaps, designed an error taxonomy, and injected targeted guidance to improve parsing across 14 datasets.</p>
-            <div class="tile-foot"><strong>+13%</strong><span>parsing accuracy</span></div>
-          </article>
-          <article class="tile" aria-labelledby="graph-title">
-            <p class="tile-kicker">Dynamic graph learning</p>
-            <h3 id="graph-title">DCLDyAD</h3>
-            <p>Built a temporal encoder and interaction-aware contrastive objective to detect unusual behaviour in evolving graphs.</p>
-            <div class="tile-foot"><strong>0.9566</strong><span>AUC on Bitcoin-Alpha at 1% anomalies</span></div>
-          </article>
-        </div>
-      </div>
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-head"><h2 id="projects-title">Selected projects</h2><span>02 / Engineering</span></div>
+      <article class="project-row"><div class="project-type">AI for local life</div><div><h3>MealWise</h3><p>An AI-assisted food delivery savings prototype for residents in Mountain View. I connected the frontend and backend, helped build the database and data ingestion flow, and improved dietary preference handling while keeping prices and fees grounded in the catalog.</p><p class="byline">CMU SV × NewsBreak hackathon · Top 10 finalist</p><a href="https://github.com/qiyuez-cmu-F26/NewsBreak-Hackathon-0919-Victoria" target="_blank" rel="noopener noreferrer">Project repository ↗</a></div></article>
+      <article class="project-row"><div class="project-type">Community software</div><div><h3>Emergency Support Network</h3><p>A mobile-first emergency support application built with a five-person software engineering team. I owned the frontend flows for onboarding, the citizen directory, and public chat, and integrated them with the team backend.</p><p class="byline">CMU software engineering team project</p></div></article>
     </section>
 
-    <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Selected projects</p>
-          <h2 id="projects-title">Built for real people.</h2>
-          <p>Product decisions and engineering decisions are better when they inform each other.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-tile project-mealwise">
-            <div><p class="tile-kicker">CMU SV × NewsBreak · Top 10 finalist</p><h3>MealWise</h3><p>An AI-assisted delivery savings prototype for local residents. I connected the front and back ends, helped build the data pipeline and database, and improved how the agent interprets dietary needs without inventing prices.</p></div>
-            <a class="inline-link" href="https://github.com/qiyuez-cmu-F26/NewsBreak-Hackathon-0919-Victoria" target="_blank" rel="noopener noreferrer">Explore the project <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-tile project-esn">
-            <div><p class="tile-kicker">CMU software engineering team project</p><h3>Emergency Support Network</h3><p>A mobile-first community response application. I led the frontend experience across onboarding, the citizen directory, and public chat, then integrated those flows with the team application.</p></div>
-            <span class="project-note">Frontend · Team integration · Mobile UX</span>
-          </article>
-        </div>
-      </div>
+    <section class="content-section" id="updates" aria-labelledby="updates-title">
+      <div class="section-head"><h2 id="updates-title">Updates</h2><span>Recent milestones</span></div>
+      <div class="update-row"><time datetime="2026-09">Sep 2026</time><p>MealWise was selected as a Top 10 finalist at the CMU SV × NewsBreak AI for Local Life hackathon. <a href="https://github.com/qiyuez-cmu-F26/NewsBreak-Hackathon-0919-Victoria" target="_blank" rel="noopener noreferrer">Project ↗</a></p></div>
+      <div class="update-row"><time datetime="2026-08">Aug 2026</time><p>Started the M.S. in Software Engineering at Carnegie Mellon University's Silicon Valley campus.</p></div>
+      <div class="update-row"><time datetime="2025">2025</time><p>EM-Merge appeared in the SETTA 2025 proceedings. <a href="https://doi.org/10.1007/978-981-95-7826-9_17" target="_blank" rel="noopener noreferrer">Paper ↗</a></p></div>
     </section>
 
-    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-inner">
-        <p class="section-label">Get in touch</p>
-        <h2 id="contact-title">Let's make something<br><span>worth using.</span></h2>
-        <p>I'm always happy to talk about research, software engineering, and thoughtful products.</p>
-        <div class="contact-links">
-          <a class="button button-dark contact-button" href="mailto:VICTORIAzqy@outlook.com">Email me <span aria-hidden="true">↗</span></a>
-          <a class="button button-dark contact-button" href="https://github.com/VictoriaZQY" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <a class="button button-dark contact-button" href="https://www.linkedin.com/in/qiyue-zhu-b9446b354" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+    <section class="content-section contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-head"><h2 id="contact-title">Get in touch</h2></div>
+      <p>I'm glad to connect about research, software engineering, and building useful AI systems.</p>
+      <div class="contact-links"><a class="contact-button" href="mailto:VICTORIAzqy@outlook.com">Email me <span aria-hidden="true">↗</span></a><a class="contact-button" href="https://github.com/VictoriaZQY" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="contact-button" href="https://www.linkedin.com/in/qiyue-zhu-b9446b354" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Victoria (Qiyue) Zhu</span><span>Made with care in California.</span><a href="./papers/">Papers <span aria-hidden="true">↗</span></a></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Victoria (Qiyue) Zhu</span><span>Software engineering &amp; AI systems · Mountain View, California</span></div></footer>
 </body>
 </html>
