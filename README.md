@@ -9,6 +9,7 @@ index.html             Homepage
 papers/index.html      Paper library and automatic PDF link
 assets/style.css       Shared responsive styles
 assets/favicon.svg     Site icon
+assets/IMG_8279.jpg     Homepage portrait
 .nojekyll              Publish static files as supplied
 README.md              These instructions
 ```
